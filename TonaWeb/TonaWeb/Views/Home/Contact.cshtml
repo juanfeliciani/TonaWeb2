@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_LayoutTonaWhite.cshtml";
+    
+}
+
+
+<section>
+    @if (ViewBag.Message == "sent")
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("El mensaje se envio con exito");
+            };
+        </script>
+    }
+    <h1 id="contacto">Contacto</h1>
+    <div class="container">
+        <form method="post" action="@Url.Action("Contact","Home")">
+            <div class="col-xs-9 col-sm-4">
+                <div class="form-group">
+                    <br />
+                    <label>
+                        <span class="txt-label">* Nombre: <input type="text" name="nombre" id="nombre" class="form-control" autofocus /></span>
+                    </label><br /><label>
+                        <span class="tex-label">* Apellido: <input type="text" name="apellido" id="apellido" class="form-control" /></span>
+                    </label>
+                    <br />
+                    <label>
+                        <span class="tex-label">
+                            * E-mail:
+                            <input type="text" name="email" id="email" class="form-control" />
+                        </span>
+                    </label>
+                    <br />
+                    <label>
+                        * Telefono:
+                        <input type="text" name="telefono" id="telefono" class="form-control" />
+                    </label>
+                    <br />
+                    <label>
+                        * Localidad:
+                        <input type="text" name="localidad" id="localidad" class="form-control" />
+                    </label>
+                    <br />
+                    <p>* Datos obligatorios</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-4">
+                <div class="form-group">
+                    <br />
+                    <label>
+                        <span class="form-group">
+                            Mensaje:
+                            <textarea class="form-control" name="comentario" rows="7" cols="40" id="comentario"></textarea>
+                        </span>
+                    </label>
+                    <div id="clear">
+                        <input name="sumbit" type="submit" onclick="send()" class="button boton" id="sumbit_contacto" value="ENVIAR" />
+                        <p class="ocultar">
+                            Para comunicarte, @*completá*@ el formulario, o envianos un mail a la siguiente dirección:
+                            <a href="mailto:tonaoficial@hotmail.com" class="linea">tonaoficial@hotmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
