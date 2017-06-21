@@ -1,0 +1,74 @@
+#txtfooter { /*Texto footer sta... NO REALIZA NINGUNA FUNCION*/
+    color: white;
+}
+
+#nav { /* navbar superior*/
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 0px;
+}
+
+#img { /*img maniqui TONA*/
+    width: 14px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 144px;
+    top: 21px;
+}
+
+#TONA { /* style titulo TONA*/
+    color: #FFF;
+    font-family: Ebrima,sans-serif;
+    font-size: 3em;
+}
+
+.txtbtn { /*Style botones producto y contacto*/
+    color: #FFF;
+    font-size: 16px;
+    font-family: Ebrima,sans-serif;
+}
+
+#htmlLayoutTona {
+    position: absolute;
+    min-height: 95%;
+    background-color: black;
+}
+
+#htmlLayoutTonaWhite{
+    height: 100%; background-color: white;
+}
+
+#jmb {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding: 0px;
+}
+
+.carousel-indicators {
+    top: 85%;
+}
+
+#btnMenu{
+    position: absolute;
+    right: 9px;
+    padding: 9px;
+}
+
+.aTxtColor:hover {
+    color: white;
+    text-decoration: none;
+}
+.aTxtColor {
+    color: white;
+}
+
+#aMenu {
+    color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#imgLO {
+    padding: 15px;
+}

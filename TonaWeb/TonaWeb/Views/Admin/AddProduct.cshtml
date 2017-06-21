@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutTonaUser.cshtml";
+}
+<section>
+    <div id="row" class="row">
+        <div class="col-xs-0 col-md-3"></div>
+        <div class="col-xs-12 col-md-6">
+            <form>
+                <div class="form-group">
+                    <label for="titulo" style="font-size: 2em;"><strong>Producto:</strong></label>
+                </div>
+                <div class="form-group">
+                    <label for="titulo">Descripcion</label>
+                    <textarea class="form-control" rows="3" placeholder="Descripción"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="titulo">Imagen</label>
+                    <tbody>
+                        <table class="table">
+                            <tr>
+                                <th style="text-align: left; vertical-align: middle; width: 20%;">
+                                    <p><button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>Subir imagen</button></p>
+                                </th>
+                                <th style="text-align: left; vertical-align: middle; width: 80%;">
+                                    <p><img id="imgMin" src="~/Image/tona1.jpg" class="img-rounded"></p>
+                                </th>
+                            </tr>
+                        </table>
+                    </tbody>
+                </div>
+                <div class="form-group">
+                    <tbody>
+                        <table class="table">
+                            <tr>
+                                <th style="text-align: center; vertical-align: middle; width: 50%;">
+                                    <p><button type="button" class="btn btn-ttc">Cargar Producto</button></p>
+                                </th>
+                            </tr>
+                        </table>
+                    </tbody>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+

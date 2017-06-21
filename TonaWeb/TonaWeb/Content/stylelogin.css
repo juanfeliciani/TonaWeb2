@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    padding-top: 35px;
+}
+
+label {
+    text-align: center;
+    display: block;
+}
+
+.form-group {
+    width: auto;
+}
+
+#table {
+    display: table;
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+
+#cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#contenido {
+    height: 100%;
+    /*text-align: center;*/
+    margin-right: 0px;
+}
+
+/*.btn-danger {
+    margin: 10px;
+}*/

@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutTonaWhite.cshtml";
+}
+
+<h1 id="galeria">Galería</h1>
+<div id="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Galeriainvierno","Home")"><img src="~/Image/OI.jpg" alt="Otoño-Invierno"/>
+                    <div class="caption">
+                        <p>Campaña Otoño-Invierno</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="thumbnail">
+                <a href="@Url.Action("Galeriaverano","Home")">
+                    <img src="~/Image/PV.jpg" alt="Primavera-Verano">
+                    <div class="caption">
+                        <p>Campaña Primavera-Verano</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<center><img id="prox" src="~/Image/prox.jpg" width="611" height="414"/></center>-->

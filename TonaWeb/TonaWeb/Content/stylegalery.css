@@ -1,0 +1,32 @@
+#galeria { /*h1*/
+    font-size: 5em;
+    font-family: 'Lucida Handwriting';
+    color: black;
+    text-align: center;
+    margin-bottom: auto;
+    max-width: 100%;
+}
+
+.row {
+    max-width: 100%;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: auto;
+    max-height: 100%;
+    padding-left: 5%;
+}
+.caption {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+p {
+    margin-bottom: auto;
+}
+#container {
+    margin-bottom: 100px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    

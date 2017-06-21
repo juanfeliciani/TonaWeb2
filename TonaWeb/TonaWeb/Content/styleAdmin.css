@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+  background-color: black;
+}
+
+#txtfooter{/*Texto footer sta...*/
+    color: white;      
+}
+.navbar{ 
+    padding: 10px;
+}
+#nav{/* navbar superior*/
+    margin: 0%;
+	border-radius: 0px;
+	padding: 10px;
+}
+#navInf{
+	padding: 10px;
+}
+#img { /*img maniqui TONA*/
+	width: 14px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	left: 144px;
+	top: 23px;
+}
+#TONA{ /* style titulo TONA*/
+	color: #FFF;
+	font-family: Ebrima,sans-serif;
+	font-size: 3em;
+}
+#btn{ /* Padding btn producto y contacto*/
+    padding-left: 10px;
+}
+#txtbtn{ /*Style botones producto y contacto*/
+    color: #FFF;
+    font-size: 18px;
+    font-family: Ebrima,sans-serif;
+}
+#imgMin{
+    width:200px;
+    height: 136px;
+}
+#txt{
+	color: white;
+}
+
+

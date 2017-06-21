@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type=text/css href="~/Content/styleAddProducto.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link type="text/css" href="~/Content/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <title>@ViewBag.Title TONA - +Producto</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                @Html.ActionLink("TONA", "tona", "Home", new { area = "" }, new { @id = "TONA", @class = "navbar-brand" })
+                <a href="@Url.Action("Login","Account")"><img id="img" src="~/Image/maniqui.png"></a>
+            </div>
+            <div class="navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img src="~/Image/menu_Sandwich.png">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("Galeria", "Home")">Galeria</a></li>
+                            <li><a href="@Url.Action("Contact","Home")">Contacto</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="txt" href="#"><img src="~/Image/ic_user.png">@Html.Encode(User.Identity.Name)</a></li>
+                    <li>
+
+                        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <a href="javascript:document.getElementById('logoutForm').submit()"><img id="imgLO" src="~/Image/ic_salir.png" /></a>
+                        }
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+        <footer class="footer">
+            <div>
+                <nav id="nav" class=" navbar-inverse">
+                    <div id="txtfooter">
+                        <p class="text-center credit">&copy; @DateTime.Now.Year -TONA - Santa Eufemia, Cordoba, Argentina</p>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
